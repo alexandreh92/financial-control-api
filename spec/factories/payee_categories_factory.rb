@@ -1,6 +1,6 @@
 FactoryBot.define do
   factory :payee_category do
-    payee { nil }
-    category { nil }
+    payee
+    category
   end
 end

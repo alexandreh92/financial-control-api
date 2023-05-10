@@ -1,5 +1,5 @@
 FactoryBot.define do
   factory :payee do
-    name { "MyString" }
+    name { 'Pizza Hut' }
   end
 end

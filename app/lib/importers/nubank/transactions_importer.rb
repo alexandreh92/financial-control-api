@@ -6,8 +6,8 @@ module Importers
       CENTS = 100
 
       TRANSACTION_TYPE = {
-        CREDIT: 0,
-        DEBIT: 1
+        CREDIT: Enums::TransactionType::CREDIT,
+        DEBIT: Enums::TransactionType::DEBIT
       }.freeze
 
       def initialize(opts = {})

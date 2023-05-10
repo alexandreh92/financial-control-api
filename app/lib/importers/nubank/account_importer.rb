@@ -19,13 +19,13 @@ module Importers
 
       private
 
-      def account
-        @account ||= Account.find_or_initialize_by(number: account_data.number)
-      end
+        def account
+          @account ||= Account.find_or_initialize_by(number: account_data.number)
+        end
 
-      def account_data
-        @account_data ||= data.bank_account
-      end
+        def account_data
+          @account_data ||= data.bank_account
+        end
     end
   end
 end

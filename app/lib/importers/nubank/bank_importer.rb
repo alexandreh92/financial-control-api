@@ -12,13 +12,13 @@ module Importers
 
       private
 
-      def bank
-        @bank ||= ::Bank.find_or_initialize_by(external_id: bank_data.id)
-      end
+        def bank
+          @bank ||= ::Bank.find_or_initialize_by(external_id: bank_data.id)
+        end
 
-      def bank_data
-        @bank_data ||= data.sign_on.institute
-      end
+        def bank_data
+          @bank_data ||= data.sign_on.institute
+        end
     end
   end
 end
